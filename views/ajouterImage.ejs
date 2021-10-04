@@ -1,0 +1,17 @@
+<%- include('header.ejs') %>
+<h1>Ajouter une image </h1>
+<form action="/ajouterImage" method="post" >
+    <div>
+        <div>
+            <label for="image">Ajouter une image:</label>
+            <input type="file" id="image" name="image">
+        </div>
+
+
+        <button type="submit" >
+            Envoyer
+        </button>
+    </div>
+</form>
+
+<%- include('footer.ejs') %>

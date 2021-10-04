@@ -1,0 +1,41 @@
+<%- include('header.ejs') %>
+<h1>Inscription</h1>
+<form action="/inscription" method="post" >
+    <div>
+        <div>
+            <label for="nom_user">Nom :</label>
+            <input type="text" id="nom_user" name="nom_user">
+        </div>
+        <div>
+            <label for="prenom_user">Prénom :</label>
+            <input type="text" id="prenom_user" name="prenom_user" >
+        </div>
+        <div>
+            <label for="adr_user">Adresse :</label>
+            <input type="text" id="adr_user" name="adr_user" >
+        </div>
+        <div>
+            <label for="tel_user">Numéro de téléphone :</label>
+            <input type="tel" id="tel_user" name="tel_user" pattern="[0-9]{10}" size="10" required>
+        </div>
+        <div>
+            <label for="mail_user">Courriel :</label>
+            <input type="email" id="mail_user" name="mail_user" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" size="30" required>
+        </div>
+        <div>
+            <label for="description">Description :</label>
+            <input type="text" id="description" name="description">
+        </div>
+
+        <div>
+            <label for="psw_user">Mot de passe :</label>
+            <input type="password" id="psw_user" name="psw_user">
+        </div>
+
+        <button type="submit" >
+            Envoyer
+        </button>
+    </div>
+</form>
+
+<%- include('footer.ejs') %>
