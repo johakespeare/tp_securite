@@ -1,7 +1,7 @@
 let express = require("express")
 let bodyParser = require('body-parser'); //permet de lire les POST
 let app = express()
-const router = express.Router();
+//const router = express.Router();
 
 const urlEncodedParser = bodyParser.urlencoded({extended: false})
 
@@ -27,10 +27,10 @@ app.get('/ajouterImage',(request,response)=>{
     response.render('ajouterImage')
 })
 
-/*
+
 app.post('/ajouterImage',urlEncodedParser,(request,response) => {
     response.json(request.body)
-})*/
+})
 
 
 app.listen(8080)
